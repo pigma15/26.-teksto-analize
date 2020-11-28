@@ -1,7 +1,7 @@
 body {
     background-color: hsl(120, 10%, 50%);
     display: grid;
-    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-columns: 1fr 8fr 5fr 1fr;
 }
     div.left {
         display: inline-block;
@@ -9,23 +9,24 @@ body {
         background-color: hsl(210, 10%, 50%);
         margin-top: 3vh;
         width: 100%;
-        min-height: 300px;
+        height: 94vh;
     }
         form {
-            display: inline-block;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
             width: 100%;
-            background-color: red;
+            height: 94vh;
         }
             textarea {
                 display: inline-block;
                 width: 100%;
-                resize: vertical;
-                min-height: 25vh;
-                max-height: 500px;
+                resize: none;
+                height: 75vh;
             }
-            .button {
+            input {
                 display: inline-block;
-                width: 60px;
+                width: 25%;
                 height: 40px;
             }
     div.right {
@@ -34,4 +35,42 @@ body {
         grid-column: 3/4;
         background-color: hsl(300, 10%, 50%);
         margin-top: 3vh;
+        padding: 2vh 2vw;
     }
+        h1 {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            font-size: 28px;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+            h1::after {
+                content: ':';
+            }
+        .row {
+            display: inline-block;
+            width: 100%;
+            background-color: hsl(120, 5%, 75%);
+            margin: 1vh 0%;
+        }
+            p {
+                display: inline-block;
+                width: 50%;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: right;
+                float: left;
+            }
+                p::after {
+                    content: ':';
+                }
+            .row > div {
+                display: inline-block;
+                width: 20%;
+                margin: 0% 15%;
+                float: left;
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: bold;
+            }
