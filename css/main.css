@@ -1,0 +1,37 @@
+body {
+    background-color: hsl(120, 10%, 50%);
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+}
+    div.left {
+        display: inline-block;
+        grid-column: 2/3;
+        background-color: hsl(210, 10%, 50%);
+        margin-top: 3vh;
+        width: 100%;
+        min-height: 300px;
+    }
+        form {
+            display: inline-block;
+            width: 100%;
+            background-color: red;
+        }
+            textarea {
+                display: inline-block;
+                width: 100%;
+                resize: vertical;
+                min-height: 25vh;
+                max-height: 500px;
+            }
+            .button {
+                display: inline-block;
+                width: 60px;
+                height: 40px;
+            }
+    div.right {
+        display: flex;
+        flex-flow: column;
+        grid-column: 3/4;
+        background-color: hsl(300, 10%, 50%);
+        margin-top: 3vh;
+    }
