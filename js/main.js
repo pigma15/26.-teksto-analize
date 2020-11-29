@@ -10,8 +10,6 @@ function inputText () {
     let skaiciai = 0;
     let skaitmenys = 0;
 
-    skaiciai.toUpperCase
-
     let subTekstai = tekstas.split(/[\s\-\:\(\)\!\?]+/);
 
     for (let i = 0; i < subTekstai.length; i++) {
@@ -34,7 +32,6 @@ function inputText () {
             }
         }
     }
-
 
     //PASTRAIPU KIEKIS A
     if (tekstas[0] !== undefined) {
