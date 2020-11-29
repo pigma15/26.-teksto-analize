@@ -23,12 +23,9 @@ function inputText () {
             zodziai += 1;
         }
         //GALIMAI TIKRINIAI ZODZIAI
-        if(/[a-zA-Z]/.test(iskarpa[0])) {
+        if(/[A-Z]/.test(iskarpa[0])) {
             if (iskarpa[0] === iskarpa[0].toUpperCase()) {
                 tikriniai += 1;
-                console.log(`${iskarpa} galimai tikrinis`);
-            } else {
-                console.log(`${iskarpa} is mazosios raides`);
             }
         }
     }
