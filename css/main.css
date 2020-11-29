@@ -63,7 +63,7 @@ body {
                 float: left;
             }
                 p::after {
-                    content: ':';
+                    content: ' kiekis :';
                 }
             .row > div {
                 display: inline-block;
