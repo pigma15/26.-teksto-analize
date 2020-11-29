@@ -12,7 +12,7 @@
         <form>
             <textarea placeholder="Tekstas..."></textarea>
             <input type="button" value="Skaičiuoti" onclick="inputText ()">
-            <input type="reset" value="Reset">
+            <input type="reset" value="Reset" onclick="resetas()">
         </form>
     </div>
     <div class="right">
@@ -35,15 +35,19 @@
         </div>
         <div class="row">
             <p>raidžių kiekis</p>
-            <div></div>
+            <div class="raides">0</div>
         </div>
         <div class="row">
             <p>skaičių kiekis</p>
-            <div></div>
+            <div class="skaiciai">0</div>
         </div>
         <div class="row">
-            <p>tikrinių žodžių kiekis</p>
-            <div class="tikriniai"></div>
+            <p>skaitmenų kiekis</p>
+            <div class="skaitmenys">0</div>
+        </div>
+        <div class="row">
+            <p>maksimalus tikrinių žodžių kiekis</p>
+            <div class="tikriniai">0</div>
         </div>
     </div>
     <script src="./js/main.js"></script>
